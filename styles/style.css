@@ -1,3 +1,10 @@
+body{
+	padding: 0;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
 @font-face {
   font-family: 'fontello';
   src: url('../fonts/fontello.eot?58990419');
@@ -42,3 +49,113 @@
 .icon-instagram:before { content: '\f32d'; } /* '' */
 .icon-behance:before { content: '\f34e'; } /* '' */
 
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+a,a:hover,a:active{
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
+	padding: 0;
+	margin: 0;
+}
+
+
+/*---------------------HEADER---------------------*/
+
+.header .container{
+	max-width: 1320px;
+	margin: 0;
+}
+
+.brand{
+	position: relative;
+	float: left;
+	font-size: 22px;
+	color: #3b3d40;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	padding: 29px 45px 29px 45px;
+	transition: .4s;
+	border-right: 1px solid #d0d1d1;
+}
+
+.icon-rocket{
+	font-size: 34px;
+	color: #3374f0;
+}
+
+.brand:hover{
+	color: #3374f0;
+}
+
+.nav{
+	float: left;
+	list-style: none;
+	padding: 40.5px 0;
+}
+
+.nav li{
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.nav li a{
+	position: relative;
+	color: #3d3d3d;
+	padding: 11px 0;
+	font-weight: bold;
+}
+
+.nav li a::after{
+	position: absolute;
+	content: '';
+	width: 2px;
+	height: 2px;
+	background-color: transparent;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: .6s;
+}
+
+.nav li a:hover::after{
+	height: 2px;
+	width: 100%;
+	background-color: #3d3d3d;
+}
+
+.autorisation{
+	float: right;
+	list-style: none;
+	padding: 40.5px 0;
+}
+
+.autorisation li{
+	display: inline-block;
+}
+
+.autorisation li a{
+	color: #3273f0;
+	text-transform: uppercase;
+	padding: 18px 30px;
+	transition: .6s ease;
+	border-radius: 40px;
+}
+
+.autorisation li a:hover{
+	background-color: #3273f0;
+	color: #fff;
+	
+}
