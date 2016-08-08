@@ -36,14 +36,18 @@ body{
 }
  
 .icon-search:before { content: '\e800'; } /* '' */
+.icon-cancel:before { content: '\e801'; } /* '' */
+.icon-menu:before { content: '\e802'; } /* '' */
 .icon-shape-3:before { content: '\e803'; } /* '' */
 .icon-ok:before { content: '\e804'; } /* '' */
 .icon-globe:before { content: '\e805'; } /* '' */
+.icon-edit:before { content: '\e807'; } /* '' */
 .icon-shape-2:before { content: '\e80b'; } /* '' */
 .icon-rocket:before { content: '\e80c'; } /* '' */
 .icon-play:before { content: '\e80d'; } /* '' */
 .icon-arrow-left:before { content: '\e80e'; } /* '' */
 .icon-arrow-right:before { content: '\e80f'; } /* '' */
+.icon-login:before { content: '\f02c'; } /* '' */
 .icon-twitter:before { content: '\f309'; } /* '' */
 .icon-facebook:before { content: '\f30c'; } /* '' */
 .icon-instagram:before { content: '\f32d'; } /* '' */
@@ -126,7 +130,9 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	background-color: transparent;
 	bottom: 0;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	transition: .6s;
 }
 
@@ -157,5 +163,52 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 .autorisation li a:hover{
 	background-color: #3273f0;
 	color: #fff;
-	
+}
+
+.nav-small{
+	display: none;
+	float: right;
+	list-style: none;
+	padding: 40.5px 0;
+}
+
+.nav-small li{
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.nav-small li a{
+	position: relative;
+	color: #3d3d3d;
+	padding: 11px 0;
+	font-size: 12px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.nav-small li a::after{
+	position: absolute;
+	content: '';
+	width: 2px;
+	height: 2px;
+	background-color: transparent;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	transition: .6s;
+}
+
+.nav-small li a:hover::after{
+	height: 2px;
+	width: 100%;
+	background-color: #3d3d3d;
+}
+
+.hamburger{
+	display: none;
+	font-size: 22px;
+	color: #3b3d40;
+	padding: 39px 20px;
 }
