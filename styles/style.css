@@ -120,6 +120,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	color: #3d3d3d;
 	padding: 11px 0;
 	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .nav li a::after{
@@ -158,6 +159,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	padding: 18px 30px;
 	transition: .6s ease;
 	border-radius: 40px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .autorisation li a:hover{
@@ -184,6 +186,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	font-size: 12px;
 	line-height: 30px;
 	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .nav-small li a::after{
@@ -208,7 +211,28 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 
 .hamburger{
 	display: none;
-	font-size: 22px;
+	font-size: 21px;
 	color: #3b3d40;
-	padding: 39px 20px;
+	padding: 36px 20px;
+}
+
+.nav-hamburger{
+	display: none;
+	top: 100px;
+	left: 0;
+	right: 0;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	background-color: #3b3d40;
+}
+
+.nav-hamburger li{
+	padding: 15px;
+}
+
+.nav-hamburger li a{
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
 }

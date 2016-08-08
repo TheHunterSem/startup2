@@ -117,3 +117,30 @@
 .hamburger{display: block;}
 
 }
+
+
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+.nav,.autorisation,.nav-small{display: none;}
+
+.header{text-align: center;}
+
+.brand{
+	border: none;
+	padding: 29px 45px 29px 10px;
+}
+
+.nav-small{display: block;}
+
+.nav-small li a{
+	font-size: 16px;
+}
+
+.nav-small li a:hover::after{
+	display: none;
+}
+
+.hamburger{display: block;}
+
+}
+}
