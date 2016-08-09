@@ -257,16 +257,16 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 .popup-login{
 	position: absolute;
 	content: '';
-	padding: 50px 20px;
-	max-width: 225px;
-	/*height: 500px;*/
+	padding: 80px 60px 50px 60px;
+	max-width: 220px;
 	background-color: #fff;
+	border-radius: 3px;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-	z-index: 999;
+	z-index: 5;
 }
 
 .popup-login .popup-login-headerbg{
@@ -289,6 +289,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
     transform: translate(-50%, -50%);
     color: #fff;
     text-transform: uppercase;
+    font-size: 16px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
@@ -374,4 +375,22 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	content: '\e806';
 	font-family: "fontello";
 	color: #3b3d40;
+}
+
+.popup-login-btn{
+	color: #3273f0;
+	text-transform: uppercase;
+	padding: 18px 30px;
+	transition: .6s ease;
+	border-radius: 40px;
+	margin: 15px 0 0 5px;
+	font-family: 'Montserrat', sans-serif;
+	outline: none;
+	border: 1px solid #3273f0;
+	background-color: #fff;
+}
+
+.popup-login-btn:hover{
+	background-color: #3273f0;
+	color: #fff;
 }
