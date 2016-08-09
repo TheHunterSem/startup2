@@ -236,3 +236,76 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 }
+
+
+
+/*---------------------POPUP AUTORISATION---------------------*/
+
+.popup-login-wrapper::after,
+.popup-registration-wrapper::after{
+	position: absolute;
+	content: '';
+	background-color: rgba(0,0,0,.3);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.popup-login{
+	position: absolute;
+	content: '';
+	padding: 50px 20px;
+	max-width: 225px;
+	/*height: 500px;*/
+	background-color: #fff;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	z-index: 999;
+}
+
+.popup-login::after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 50px;
+	background-color: rgba(50,115,240,.7);
+	top: 0;
+	left: 0;
+}
+
+.login-username,
+.login-password{
+	display: inline-block;
+	margin: 20px 0 8px 15px;
+	color: #3b3d40;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.login-username-input,
+.login-password-input{
+	height: 30px;
+	width: 200px;
+	outline: none;
+	border: 1px solid #3b3d40;
+	padding: 5px 10px;
+	border-radius: 20px;
+	color: #3b3d40;
+}
+
+.login-username-input:hover,
+.login-password-input:hover{
+	border-color: #3273f0;
+}
+
+.login-username-input:focus,
+.login-password-input:focus{
+	background-color: rgba(50,115,240,.1);
+	border-color: #3273f0;
+}
