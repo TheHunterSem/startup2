@@ -41,6 +41,7 @@ body{
 .icon-shape-3:before { content: '\e803'; } /* '' */
 .icon-ok:before { content: '\e804'; } /* '' */
 .icon-globe:before { content: '\e805'; } /* '' */
+.icon-check:before { content: '\e806'; } /* '' */
 .icon-edit:before { content: '\e807'; } /* '' */
 .icon-shape-2:before { content: '\e80b'; } /* '' */
 .icon-rocket:before { content: '\e80c'; } /* '' */
@@ -48,6 +49,7 @@ body{
 .icon-arrow-left:before { content: '\e80e'; } /* '' */
 .icon-arrow-right:before { content: '\e80f'; } /* '' */
 .icon-login:before { content: '\f02c'; } /* '' */
+.icon-check-empty:before { content: '\f096'; } /* '' */
 .icon-twitter:before { content: '\f309'; } /* '' */
 .icon-facebook:before { content: '\f30c'; } /* '' */
 .icon-instagram:before { content: '\f32d'; } /* '' */
@@ -267,7 +269,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	z-index: 999;
 }
 
-.popup-login::after{
+.popup-login .popup-login-headerbg{
 	position: absolute;
 	content: '';
 	width: 100%;
@@ -275,6 +277,37 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	background-color: rgba(50,115,240,.7);
 	top: 0;
 	left: 0;
+}
+
+.popup-login .popup-login-headerbg .popup-login-headerbg-title{
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.popup-login .popup-login-headerbg .popup-login-headerbg-close{
+	position: absolute;
+	content: '';
+	top: 50%;
+	right: 10px;
+	font-size: 20px;
+	color: rgba(255,255,255,.5);
+	-webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: .4s;
+}
+
+.popup-login .popup-login-headerbg .popup-login-headerbg-close:hover{
+	color: rgba(255,255,255,1);
 }
 
 .login-username,
@@ -297,6 +330,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	padding: 5px 10px;
 	border-radius: 20px;
 	color: #3b3d40;
+	transition: .4s;
 }
 
 .login-username-input:hover,
@@ -306,6 +340,38 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 
 .login-username-input:focus,
 .login-password-input:focus{
-	background-color: rgba(50,115,240,.1);
+	background-color: rgba(50,115,240,.2);
 	border-color: #3273f0;
+}
+
+.login-checkbox{
+	display: none;
+}
+
+.login-checkbox + label{
+	position: relative;
+	display: block;
+	margin: 20px 10px;
+	padding-left: 20px;
+	cursor: pointer;
+	line-height: 14px;
+	color: #3b3d40;
+}
+
+.login-checkbox + label::before{
+	position: absolute;
+	content: '\f096';
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	font-size: 16px;
+	font-family: "fontello";
+	color: #3b3d40;
+}
+
+.login-checkbox:checked + label::before{
+	content: '\e806';
+	font-family: "fontello";
+	color: #3b3d40;
 }
