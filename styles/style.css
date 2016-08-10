@@ -243,8 +243,12 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 
 /*---------------------POPUP AUTORISATION---------------------*/
 
-.popup-login-wrapper::after,
-.popup-registration-wrapper::after{
+.popup_login_wrapper{
+	display: none;
+	opacity: 1;
+}
+
+.popup-login-darken{
 	position: absolute;
 	content: '';
 	background-color: rgba(0,0,0,.3);
@@ -388,6 +392,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	outline: none;
 	border: 1px solid #3273f0;
 	background-color: #fff;
+	cursor: pointer;
 }
 
 .popup-login-btn:hover{

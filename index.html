@@ -45,11 +45,11 @@
 				<li><a href="#" title="Search"><i class="icon-search"></i></a></li>
 			</ul>
 			<ul class="autorisation">
-				<li><a href="#">login</a></li>
+				<li><a href="#" id="login">login</a></li>
 				<li><a href="#">register</a></li>
 			</ul>
 			<ul class="nav-small">
-				<li><a href="#" title="Login"><i class="icon-login"></i></a></li>
+				<li><a href="#" id="login" title="Login"><i class="icon-login"></i></a></li>
 				<li><a href="#" title="Registration"><i class="icon-edit"></i></a></li>
 			</ul>
 			<a href="#" class="hamburger" id="hamburger"><i class="icon-menu"></i></a>
@@ -67,12 +67,13 @@
 		</div>
 	</header>
 	
-	<div class="popup-login-wrapper">
+	<div class="popup_login_wrapper" id="form-login">
+	<div class="popup-login-darken"></div>
 		<div class="popup-login">
-		<div class="popup-login-headerbg">
-			<p class="popup-login-headerbg-title">autorisation</p>
-			<a href="#" class="popup-login-headerbg-close"><i class="icon-cancel"></i></a>
-		</div>
+			<div class="popup-login-headerbg">
+				<p class="popup-login-headerbg-title">autorisation</p>
+				<a href="#" class="popup-login-headerbg-close" id="close-popup-login"><i class="icon-cancel"></i></a>
+			</div>
 			<form>
 				<span class="login-username clearfix">username</span>
 				<input type="text" class="login-username-input">
