@@ -43,6 +43,12 @@ $("a#play-btn").click(function(){
     return false;
 });
 
+jQuery( document ).ready(function($) {
+    $('video').click(function() {
+        this.paused ? this.play() : this.pause();
+    });
+})
+
 // При нажатии на хрестик видео перестает воспроизводится, закрвывается и появляется контент
 $("a#close-video").click(function(){
     document.getElementById("video").pause();

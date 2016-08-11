@@ -92,7 +92,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	color: #3b3d40;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
-	padding: 27px 45px 27px 45px;
+	padding: 27px 45px 39px 45px;
 	transition: .4s;
 	border-right: 1px solid #d0d1d1;
 }
@@ -275,12 +275,16 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	padding: 80px 60px 50px 60px;
 	max-width: 220px;
 	background-color: #fff;
-	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+	     transform: translate(-50%, -50%);
 	z-index: 5;
 }
 
@@ -301,7 +305,9 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+	     transform: translate(-50%, -50%);
     color: #fff;
     text-transform: uppercase;
     font-size: 16px;
@@ -318,7 +324,12 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	color: rgba(255,255,255,.5);
 	-webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+	     transform: translateY(-50%);
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    -moz-transition: .4s;
     transition: .4s;
 }
 
@@ -344,8 +355,13 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	outline: none;
 	border: 1px solid #3b3d40;
 	padding: 5px 10px;
-	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	   -moz-border-radius: 20px;
+	        border-radius: 20px;
 	color: #3b3d40;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	-moz-transition: .4s;
 	transition: .4s;
 }
 
@@ -396,8 +412,13 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	color: #3273f0;
 	text-transform: uppercase;
 	padding: 18px 30px;
+	-webkit-transition: .6s ease;
+	-o-transition: .6s ease;
+	-moz-transition: .6s ease;
 	transition: .6s ease;
-	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	   -moz-border-radius: 40px;
+	        border-radius: 40px;
 	margin: 15px 0 0 5px;
 	font-family: 'Montserrat', sans-serif;
 	outline: none;
@@ -410,7 +431,6 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	background-color: #3273f0;
 	color: #fff;
 }
-
 
 /*-----------------------------VIDEO WRAPPER-----------------------------*/
 .video-wrapper{
@@ -503,11 +523,16 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 .video-wrapper-content-btn{
 	font-family: 'Montserrat', sans-serif;
 	border: 2px solid rgba(255,255,255,.2);
-	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	   -moz-border-radius: 40px;
+	        border-radius: 40px;
 	padding: 22px 48px;
 	color: #fff;
 	text-transform: uppercase;
 	margin-top: 50px;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	-moz-transition: .4s;
 	transition: .4s;
 }
 
@@ -516,7 +541,6 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 }
 
 .video-wrapper video{
-	position: relative;
 	display: none;
 	opacity: 1;
 	height: 100%;
@@ -536,9 +560,16 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	opacity: .5;
 	font-size: 40px;
 	z-index: 10;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	-moz-transition: .4s;
 	transition: .4s;
 }
 
 .video-wrapper .close-video:hover{
 	opacity: 1;
 }
+
+
+
+/*-----------------------------BRANDS-----------------------------*/
