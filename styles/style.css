@@ -516,8 +516,29 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 }
 
 .video-wrapper video{
+	position: relative;
 	display: none;
 	opacity: 1;
 	height: 100%;
 	width: 100%;
+}
+
+.video-wrapper{
+	position: relative;
+}
+
+.video-wrapper .close-video{
+	position: absolute;
+	content: '';
+	top: 20px;
+	right: 20px;
+	color: #E03E36;
+	opacity: .5;
+	font-size: 40px;
+	z-index: 10;
+	transition: .4s;
+}
+
+.video-wrapper .close-video:hover{
+	opacity: 1;
 }

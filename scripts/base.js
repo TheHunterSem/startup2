@@ -6,12 +6,6 @@ $(document).ready(function() {
 	});
 
 
-$('.main-screen').slick({
-	dots: true,
-	arrows: false
-});
-
-
 // --------------LOGIN-POPUP--------------
 
 $(document).ready(function() { 
@@ -33,6 +27,7 @@ $(document).ready(function() {
 	});
 
 
+// При нажатии на кнопку play, исчезает контент, и поя вляется видео
 $(document).ready(function() { 
 	$('a#play-btn').click( function(event){ 
 		event.preventDefault();
@@ -42,14 +37,22 @@ $(document).ready(function() {
 		});
 	});
 
+// При нажатии на кнопку play видео автоматически воспроизводится
 $("a#play-btn").click(function(){
     document.getElementById("video").play();
     return false;
 });
 
-$("#video").click(function(){
+// При нажатии на хрестик видео перестает воспроизводится, закрвывается и появляется контент
+$("a#close-video").click(function(){
     document.getElementById("video").pause();
     	$('#video').fadeOut(500);
     	$('#video-wrapper-content').fadeIn(500);
     return false;
+});
+
+
+$('.video-slider').slick({
+	dots: false,
+	arrows: true
 });
