@@ -573,3 +573,34 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 
 
 /*-----------------------------BRANDS-----------------------------*/
+.brands{
+	background-color: #f9f9f9;
+	padding: 45px 0;
+}
+
+.brands .container{
+	max-width: 1275px;
+}
+.brands-nav{
+	list-style: none;
+
+}
+
+.brands-nav li{
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.brands-nav li:first-child{
+	margin-left: 0;
+}
+
+.brands-nav li:last-child{
+	margin-left: 0;
+}
+
+.brands-nav li a{
+	display: block;
+	transition: .4s;
+}
