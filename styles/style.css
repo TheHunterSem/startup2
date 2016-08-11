@@ -92,13 +92,14 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	color: #3b3d40;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
-	padding: 29px 45px 29px 45px;
+	padding: 27px 45px 27px 45px;
 	transition: .4s;
 	border-right: 1px solid #d0d1d1;
 }
 
 .icon-rocket{
 	font-size: 34px;
+	line-height: 22px;
 	color: #3374f0;
 }
 
@@ -157,6 +158,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 
 .autorisation li a{
 	color: #3273f0;
+	margin: 25px 0;
 	text-transform: uppercase;
 	padding: 18px 30px;
 	transition: .6s ease;
@@ -243,9 +245,17 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 
 /*---------------------POPUP AUTORISATION---------------------*/
 
-.popup_login_wrapper{
+.popup-login-wrapper,
+.popup-registration-wrapper{
 	display: none;
+	position: fixed;
+	content: '';
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	opacity: 1;
+	z-index: 100;
 }
 
 .popup-login-darken{
@@ -258,7 +268,8 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	right: 0;
 }
 
-.popup-login{
+.popup-login,
+.popup-registration{
 	position: absolute;
 	content: '';
 	padding: 80px 60px 50px 60px;
@@ -273,7 +284,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	z-index: 5;
 }
 
-.popup-login .popup-login-headerbg{
+.popup-headerbg{
 	position: absolute;
 	content: '';
 	width: 100%;
@@ -283,7 +294,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	left: 0;
 }
 
-.popup-login .popup-login-headerbg .popup-login-headerbg-title{
+.popup-headerbg-title{
 	position: absolute;
 	content: '';
 	top: 50%;
@@ -298,7 +309,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
     font-family: 'Montserrat', sans-serif;
 }
 
-.popup-login .popup-login-headerbg .popup-login-headerbg-close{
+.popup-headerbg-close{
 	position: absolute;
 	content: '';
 	top: 50%;
@@ -311,7 +322,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
     transition: .4s;
 }
 
-.popup-login .popup-login-headerbg .popup-login-headerbg-close:hover{
+.popup-headerbg-close:hover{
 	color: rgba(255,255,255,1);
 }
 
@@ -398,4 +409,115 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 .popup-login-btn:hover{
 	background-color: #3273f0;
 	color: #fff;
+}
+
+
+/*-----------------------------VIDEO WRAPPER-----------------------------*/
+.video-wrapper{
+	/*max-height: 981px;*/
+}
+
+.video-wrapper-content{
+	padding: 100px 0 60px 0;
+	margin: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	background-color: #4e85f0;
+	opacity: .85;
+	max-height: 100vh;
+	height: 100%;
+	width: 100%;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	   -moz-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	   -moz-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	text-align: center;
+}
+
+.play-btn-circle{
+	/*margin-top: 60px;*/
+	border: 2px solid rgba(255,255,255,.2);
+	text-align: center;
+	width: 116px;
+	height: 116px;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	-moz-transition: .4s;
+	transition: .4s;
+}
+
+.play-btn-circle:hover{
+	border: 2px solid rgba(255,255,255,1);
+}
+
+.play-btn{
+	display: inline-block;
+	font-size: 80px;
+	color: rgba(255,255,255,.7);
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	-moz-transition: .4s;
+	transition: .4s;
+}
+
+.play-btn-circle:hover .play-btn{
+	color: rgba(255,255,255,1);
+}
+
+.video-wrapper-content-header{
+	margin-top:30px;
+	color: #fff;
+	font-size: 60px;
+	font-weight: bold;
+	max-width: 791px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.video-wrapper-content-title{
+	margin-top: 50px;
+	max-width: 530px;
+	color: #fff;
+	font-size: 18px;
+	opacity: .8;
+}
+
+.video-wrapper-content-btn{
+	font-family: 'Montserrat', sans-serif;
+	border: 2px solid rgba(255,255,255,.2);
+	border-radius: 40px;
+	padding: 22px 48px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 50px;
+	transition: .4s;
+}
+
+.video-wrapper-content-btn:hover{
+	border: 2px solid rgba(255,255,255,1);
+}
+
+.video-wrapper video{
+	display: none;
+	opacity: 1;
+	height: 100%;
+	width: 100%;
 }
