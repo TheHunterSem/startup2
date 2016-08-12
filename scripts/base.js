@@ -32,8 +32,7 @@ $(document).ready(function() {
 	$('a#play-btn').click( function(event){ 
 		event.preventDefault();
 		 	$('#video-wrapper-content').fadeOut(300);
-		 	$('#video').fadeIn(500);
-			 			
+		 	$('#video').fadeIn(500);		
 		});
 	});
 
@@ -47,7 +46,7 @@ jQuery( document ).ready(function($) {
     $('video').click(function() {
         this.paused ? this.play() : this.pause();
     });
-})
+});
 
 // При нажатии на хрестик видео перестает воспроизводится, закрвывается и появляется контент
 $("a#close-video").click(function(){
