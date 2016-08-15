@@ -1,8 +1,8 @@
 $(document).ready(function() { 
 	$('a#hamburger').click( function(event){ 
 		event.preventDefault();
-		 	$('#nav-hamburger').toggle();		 			
-		});
+		 	$('#nav-hamburger').toggle(300);	 			
+		});	
 	});
 
 

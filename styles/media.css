@@ -1,7 +1,7 @@
-@media screen and (min-width: 1025px) and (max-width: 1250px) {
+@media screen and (min-width: 1025px) and (max-width: 1265px) {
 .nav li{
 	display: inline-block;
-	margin: 0 12px;
+	margin: 0 10px;
 }
 
 .nav li a{
@@ -29,7 +29,7 @@
 
 }
 
-@media screen and (min-width: 870px) and (max-width: 1024px) {
+@media screen and (min-width: 886px) and (max-width: 1024px) {
 
 .nav li{
 	display: inline-block;
@@ -62,7 +62,7 @@
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 869px) {
+@media screen and (min-width: 801px) and (max-width: 885px) {
 .header .container{
 	max-width: 100%;
 }
@@ -96,7 +96,7 @@
 }
 
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 776px) {
 .nav,.autorisation,.nav-small{display: none;}
 
 .header{text-align: center;}
