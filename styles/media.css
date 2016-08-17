@@ -68,3 +68,39 @@
 }
 
 }
+
+
+
+@media screen and (min-width: 376px) and (max-width: 425px){
+.nav,.autorisation,.nav-small{display: none;}
+
+.header{text-align: center;}
+
+.brand{
+	border: none;
+	padding: 33px 0 43px 10px;
+	font-size: 15px;
+}
+
+.icon-rocket{
+	font-size: 24px;
+}
+
+.nav-small{display: block;}
+
+.nav-small li a{
+	font-size: 15px;
+}
+
+.nav-small li a:hover::after{
+	display: none;
+}
+
+.hamburger{display: block;}
+
+.hamburger{
+	font-size: 15px;
+	padding: 47px 0 43px 0px;
+}
+
+}
