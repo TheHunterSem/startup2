@@ -110,7 +110,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 .nav{
 	float: left;
 	list-style: none;
-	padding: 40.5px 0;
+	padding: 37px 0;
 }
 
 .nav li{
@@ -149,7 +149,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 .autorisation{
 	float: right;
 	list-style: none;
-	padding: 40.5px 0;
+	padding: 35.5px 0;
 }
 
 .autorisation li{
@@ -175,7 +175,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	display: none;
 	float: right;
 	list-style: none;
-	padding: 40.5px 0;
+	padding: 42px 0 38px 0;
 }
 
 .nav-small li{
@@ -542,18 +542,18 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	border: 2px solid rgba(255,255,255,1);
 }
 
-.video-wrapper video{
+.video-block{
 	display: none;
 	opacity: 1;
 	height: 100%;
 	width: 100%;
 }
 
-.video-wrapper{
+.video-block{
 	position: relative;
 }
 
-.video-wrapper .close-video{
+.video-block .close-video{
 	position: absolute;
 	content: '';
 	top: 20px;
@@ -568,7 +568,7 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 	transition: .4s;
 }
 
-.video-wrapper .close-video:hover{
+.video-block .close-video:hover{
 	opacity: 1;
 }
 
@@ -585,13 +585,17 @@ h1,h2,h3,h4,h5,h6,ul,li,p,a,span{
 }
 .brands-nav{
 	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 
 }
 
 .brands-nav li{
 	vertical-align: middle;
 	display: inline-block;
-	margin: 0 15px;
+	margin: 10px 15px;
 }
 
 .brands-nav li:first-child{
