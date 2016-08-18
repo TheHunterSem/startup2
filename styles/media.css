@@ -156,7 +156,8 @@
 }
 
 
-/*---------------------POPUP AUTORISATION---------------------*/
+
+/*------------------------------------------POPUP AUTORISATION------------------------------------------*/
 
 @media screen and (max-width: 320px){
 
@@ -175,5 +176,53 @@
 @media screen and (min-width: 376px) and (max-width: 425px){
 
 .popup-login,.popup-registration{ padding: 80px 75px 50px 30px; max-width: 190px; }
+
+}
+
+
+
+/*------------------------------------------VIDEO WRAPPER------------------------------------------*/
+
+@media screen and (max-width: 320px){
+
+.video-wrapper-content-header{ font-size: 20px; max-width: 250px; }
+
+.play-btn-circle{ width: 80px; height: 80px; }
+
+.play-btn{ font-size: 55px; }
+
+.video-wrapper-content-title{ max-width: 300px; font-size: 13px; }
+
+.video-wrapper-content-btn{ padding: 18px 28px; }
+
+}
+
+
+@media screen and (min-width: 321px) and (max-width: 375px){
+
+.video-wrapper-content-header{ font-size: 20px; max-width: 250px; }
+
+.play-btn-circle{ width: 80px; height: 80px; }
+
+.play-btn{ font-size: 55px; }
+
+.video-wrapper-content-title{ max-width: 300px; font-size: 13px; }
+
+.video-wrapper-content-btn{ padding: 18px 28px; }
+
+}
+
+
+@media screen and (min-width: 376px) and (max-width: 425px){
+
+.video-wrapper-content-header{ font-size: 20px; max-width: 250px; }
+
+.play-btn-circle{ width: 80px; height: 80px; }
+
+.play-btn{ font-size: 55px; }
+
+.video-wrapper-content-title{ max-width: 300px; font-size: 13px; }
+
+.video-wrapper-content-btn{ padding: 18px 28px; }
 
 }
