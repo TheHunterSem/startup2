@@ -1,7 +1,7 @@
 $(document).ready(function() { 
 	$('a#hamburger').click( function(event){ 
 		event.preventDefault();
-		 	$('#nav-hamburger').toggle(300);	 			
+		 	$('#nav-hamburger').toggle(200);		  			
 		});	
 	});
 
@@ -32,7 +32,7 @@ $(document).ready(function() {
 	$('a#play-btn').click( function(event){ 
 		event.preventDefault();
 		 	$('#video-wrapper-content').fadeOut(300);
-		 	$('#video').fadeIn(500);		
+		 	$('#video-block').fadeIn(500);		
 		});
 	});
 
@@ -56,8 +56,19 @@ $("a#close-video").click(function(){
     return false;
 });
 
-
+// СЛАЙДЕР
 $('.video-slider').slick({
 	dots: false,
 	arrows: true
 });
+
+
+// ПЛАВНЫЙ ПЕРЕХОД ПО ЯКОРЯМ
+$(document).ready(function() {
+    $("a").click(function () { 
+      var elementClick = $(this).attr("href");
+      var destination = $(elementClick).offset().top;
+      $('html,body').animate( { scrollTop: destination }, 1200 );
+      return false;
+    });
+  });
