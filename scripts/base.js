@@ -1,3 +1,20 @@
+$( function() {
+    var state = true;
+    $( "#features_item_btn" ).on( "click", function() {
+    	event.preventDefault();
+      if ( state ) {
+        $( "#features_item_content_wrapper" ).animate({
+          height: 150
+        }, 1000 );
+      } else {
+        $( "#features_item_content_wrapper" ).animate({
+          height: 45
+        }, 1000 );
+      }
+      state = !state;
+    });
+  } );
+
 $(document).ready(function() { 
 	$('a#hamburger').click( function(event){ 
 		event.preventDefault();
@@ -72,3 +89,6 @@ $(document).ready(function() {
       return false;
     });
   });
+
+
+
